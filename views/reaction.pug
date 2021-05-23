@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title Output
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    // Mobile Metas
+    meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no')
+
+
+body
+form(method='GET' action='/balance')
+  table
+
+    tr
+
+      td
+        input(type='number' min='1' step='1' name='S' required='')
+      td #{datas.A}
+ 
+      td +
+ 
+      td
+        input(type='number'  min='1' step='1' name='SO' required)
+      td #{datas.B}
+
+      td ------->>>
+
+      td
+        input(type='number'  min='1' step='1' name='AV' required)
+      td #{datas.C}
+ 
+      td +
+
+      td
+        input(type='number' min='1' step='1' name='MR' required)
+      td #{datas.D}
+
+    tr  
+      td(colspan='2')
+        input#sub(type='Submit' value='Submit' required) 
+  
+    
+
+
+
+
+
